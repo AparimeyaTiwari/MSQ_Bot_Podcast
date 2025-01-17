@@ -1,4 +1,4 @@
-import streamlit as st
+import streamlit as st # type: ignore
 st.title("WELCOME TO MSQ PODCAST BOT!!!")
 with st.form('bot form',clear_on_submit = True,border = True):
     name = st.text_input("Enter guest name")
