@@ -3,6 +3,12 @@ from ollama import chat
 from ollama import ChatResponse
 import ollama
 from fpdf import FPDF
+import pymupdf
+from extraction.input_resume.resume_parse import *
+from ollama_resume import ner_generator
+from main import question_generator
+from theme_generation import theme
+
 
 combined_data = [] #used to store all data which is to be feed into our final model
 
