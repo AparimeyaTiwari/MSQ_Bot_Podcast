@@ -9,16 +9,16 @@
 <body>
     <br><br><br><br<br><br><br><br><br><br><br><br>
     <center>
-    <form action= "{{url_for('second_page')}}" method = "post">
+    <form action ="/podcast_question" method= "post" enctype="multipart/form-data">
     <label for="guest_name">Enter guest name</label><br><br>
-    <input type = "text" id = "guest_name" name = "guest_name"><br><br>
+    <input type = "text" name = "name"><br><br>
     <label for="theme">Enter theme related data</label><br><br>
-    <input type="text" id = "theme" name = "theme"><br><br>
+    <input type="text" name = "theme"><br><br>
     <label for="resume">Attach guest resume</label><br><br>
-    <input type = "file" id="resume" name = "resume"><br><br>
+    <input type = "file" name = "file"><br><br>
     <label for="yt_link">Attach reference links</label><br><br>
-    <input type = "text" id="yt_link" name = "yt_link"><br><br>
-    <input type="submit" value="Generate Podcast Questions"
+    <input type = "text" name = "yt"><br><br>
+    <input type="submit" value="Generate Podcast Questions"><br><br>
     </form>
     </center>
     
