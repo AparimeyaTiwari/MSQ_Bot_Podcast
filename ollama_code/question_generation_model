@@ -26,6 +26,7 @@ SYSTEM """
  Provide a string resume in JSON format and a theme for the reference podcast.
 Generate a detailed and customized podcast questionnaire tailored specifically to the guest's profile based on the provided resume. Use the theme only to guide the structure, tone, and flow of the podcast, ensuring that the actual questions are centered around the guest's experiences, skills, achievements, and data provided in the JSON.
 
+The questions should mention the name of guest throughout.
 The questions should be personalized with the guest's name and divided into logical sections like "Introduction," "Technical Journey," "Internships," "Career Advice," etc., as appropriate to the resume data. Include at least 25 unique and meaningful questions that cover all key aspects of the guest's profile (e.g., education, skills, projects, internships, achievements).
 
 Focus on creating questions that demonstrate a deep understanding of the guest's specific experiences, such as skills they’ve mastered, companies they’ve interned with, and standout projects they’ve worked on. Avoid generic or overly theme-driven questions that aren't directly tied to the resume data.

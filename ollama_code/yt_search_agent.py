@@ -4,7 +4,6 @@ from ollama import ChatResponse
 import ollama
 from fpdf import FPDF
 
-'''
 combined_data = [] #used to store all data which is to be feed into our final model
 
 # Reading file data and convertint to ner json
@@ -57,7 +56,7 @@ for i in data:
 final_op = ""
 for j in response_array:
     final_op += j
-    final_op += " "
+    final_op += "\n\n"
 
 response : ChatResponse = chat(model="theme_final_model",messages = [
             {
@@ -78,7 +77,7 @@ response : ChatResponse = chat(model="podcast_model",messages = [
         'content':f"{final_input}"
     }
 ])
-'''
+
 
 class PDF(FPDF):
     def header(self):
