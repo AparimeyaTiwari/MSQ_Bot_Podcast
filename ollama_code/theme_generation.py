@@ -1,6 +1,8 @@
 import ollama
 from ollama import chat,ChatResponse
-def theme(link):
+from youtube_transcript_api import YouTubeTranscriptApi as yta
+
+def theme(link,array):
     id = link[32:len(link)]
     data = yta.get_transcript(str(id))
     total_count = len(data)
@@ -10,9 +12,9 @@ def theme(link):
     op = ""
     quotient = total_count//5
     remainder = total_count%5
-    print("total_count: ", total_count)
+    '''print("total_count: ", total_count)
     print(quotient)
-    print(remainder)
+    print(remainder)'''
 
     for i in data:
         op += "".join(i['text'])
@@ -42,3 +44,5 @@ def theme(link):
                     'content':f"{final_op}",
                 },
     ])
+    array.append(response.message.content)
+    return array

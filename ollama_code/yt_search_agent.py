@@ -4,13 +4,13 @@ from ollama import ChatResponse
 import ollama
 from fpdf import FPDF
 import pymupdf
-from extraction.input_resume.resume_parse import *
-from ollama_resume import ner_generator
-from main import question_generator
+from ollama_code.resume_parse import *
+from ollama_code.text_ner import ner_generator
+from ollama_code.questions_gen import question_generator
 from theme_generation import theme
 
 
-combined_data = [] #used to store all data which is to be feed into our final model
+'''combined_data = [] #used to store all data which is to be feed into our final model
 
 # Reading file data and convertint to ner json
 with open('/Users/aparimeyatiwari/Downloads/MSQ_Bot_Podcast/ollama_code/output_resume1.txt','r') as file:
@@ -84,29 +84,29 @@ response : ChatResponse = chat(model="podcast_model",messages = [
     }
 ])
 
+'''
 
-class PDF(FPDF):
-    def header(self):
-        self.set_font('times','BI',30)
-        self.cell(0,10,'RICHA QUESTIONS',ln=1,align = 'C')
-        self.ln(10)
+def convert(input,guest):
+    class PDF(FPDF):
+        def header(self):
+            self.set_font('times','BI',30)
+            self.cell(0,10,f'{guest} QUESTIONS',ln=1,align = 'C')
+            self.ln(10)
 
-    def footer(self):
-        self.set_y(-10)
-        self.set_font('times','I',10)
-        self.cell(0,10,f'Page: {self.page_no()}',align='C')
+        def footer(self):
+            self.set_y(-10)
+            self.set_font('times','I',10)
+            self.cell(0,10,f'Page: {self.page_no()}',align='C')
 
-    def add_chapter(self,name):
-        with open(name,'r') as file:
-            txt = file.read()
-        self.set_font('times','',14)
-        self.multi_cell(0,5,txt)
-        self.ln(2)
+        def add_chapter(self,txt):
+            self.set_font('times','',14)
+            self.multi_cell(0,5,txt)
+            self.ln(2)
 
 
-pdf =PDF()
-pdf.add_page()
-pdf.set_auto_page_break(auto = True, margin=10)
-pdf.add_chapter('ollama_code/question1.txt')
-pdf.output("RICHA_QUESTIONS.pdf")
-print("PDF READY TO VIEW!!")
+    pdf =PDF()
+    pdf.add_page()
+    pdf.set_auto_page_break(auto = True, margin=10)
+    pdf.add_chapter(input)
+    pdf.output(f'{guest}')
+    print("PDF READY TO VIEW!!")

@@ -25,3 +25,4 @@ def question_generator(response_array,combined_data):
             'content':f"{final_input}"
         }
     ])
+    return response.message.content
