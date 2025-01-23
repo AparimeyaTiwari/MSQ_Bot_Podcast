@@ -8,6 +8,7 @@ from my_package.resume_parse import resume_parsing
 from my_package.text_ner import ner_generator
 from my_package.theme_generation import theme
 from my_package.yt_search_agent import convert
+from my_package.yt_search_agent import formating
 
 
 
@@ -25,7 +26,7 @@ def podcast_question():
     my_array = []
     guest = request.form['guest_name']
     file = request.files['file'] #files is an array of files, name
-    theme_data = request.form['theme']
+    topic = request.form['topics']
     youtube = request.form['yt']
     if file:
         file.save(os.path.join(
@@ -38,6 +39,7 @@ def podcast_question():
         ner_generator(f'json/{final_name}',my_array)
         theme(youtube,my_array)
         question = question_generator(my_array)
+        formatted_ques = formating(question)
         convert(question,guest)
         return 'Data submitted sucessfully!!!Please stand by while we generate the podcast questions' 
     return redirect('/')
