@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style2.css')}}">
     <title>Document</title>
 </head>
 <body>
-    <br><br><br><br><br><br><br><br><br><br>
-    <center>
-        <h2>Podcast questions have been generated sucessfully!!!You may download it!!!</h2><br><br>
-        <a href="{{guest}}.pdf">
-            <img src="pngtree-download-button-png-png-image_3340484.jpg">
-        </a>
+    <br><br>
+        <h2><center>Podcast questions have been generated sucessfully!!!You may download it!!!</center></h2><br><br>
+        <center><object class='pdf' data="{{url_for('static',filename=name+'.pdf')}}" width="900" height="700"></object></center>
     </center>
     <br><br><br><br><br><br><br><br><br><br>
 </body>

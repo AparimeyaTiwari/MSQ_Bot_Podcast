@@ -8,7 +8,7 @@ from my_package.resume_parse import resume_parsing
 from my_package.text_ner import ner_generator
 from my_package.theme_generation import theme
 from my_package.yt_search_agent import convert
-from my_package.yt_search_agent import formating
+
 
 
 
@@ -25,6 +25,8 @@ def home():
 def podcast_question():
     my_array = []
     guest = request.form['guest_name']
+    global name
+    name = guest
     file = request.files['file'] #files is an array of files, name
     topic = request.form['topics']
     youtube = request.form['yt']
@@ -38,22 +40,22 @@ def podcast_question():
         final_name = file_name[0]+'.txt'
         ner_generator(f'json/{final_name}',my_array)
         theme(youtube,my_array)
-        question = question_generator(my_array)
+        question = question_generator(my_array,topic)
         convert(question,guest)
-        output = os.path.join(os.path.expanduser('~'),'Downloads',f'{guest}.pdf')
+        output = os.path.join(os.path.expanduser('~'),'Downloads','MSQ_BOT_PODCAST','flask_code','static',f'{name}.pdf')
         if(os.path.exists(output) == False):
-            return "Error questiosn not generated"
+            return "Error questions not generated"
         send_file(
             output,
             as_attachment = True,
-            download_name='GUEST_QUESTIONS.pdf'
+            download_name=f'{guest}.pdf'
         )
-        return redirect('/final_page',guest)
+        return redirect('/final_page')
     return redirect('/')
 
 @app.route('/final_page')
-def output(guest):
-   return render_template('page2.html')
+def output():
+   return render_template('page2.html',name=name)
 
 if __name__ == "__main__":
     app.run(debug=True, port=8000)

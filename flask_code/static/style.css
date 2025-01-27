@@ -5,6 +5,7 @@
 
 input,textarea{
     border:1px solid blueviolet;
+    color:#00FFAB;
 }
 
 .flex-container{
@@ -29,6 +30,3 @@ input,textarea{
     align-items: center;
 }
 
-input[type='submit']{
-    color:#00FFAB;
-}
