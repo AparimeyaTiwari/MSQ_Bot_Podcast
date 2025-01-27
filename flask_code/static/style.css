@@ -4,7 +4,7 @@
 }
 
 input,textarea{
-    border:1px solid blueviolet;
+    border:3px solid blueviolet;
     color:#00FFAB;
 }
 
@@ -18,9 +18,9 @@ input,textarea{
     align-content: space-evenly;
 }
 .box{
-    border: 8px solid #161B22;
+    border: 8px solid blueviolet;
     background-color: ghostwhite;
-    opacity: 50%;
+    opacity: 75%;
 }
 
 .flex-element{
