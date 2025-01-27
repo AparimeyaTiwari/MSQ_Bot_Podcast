@@ -23,4 +23,4 @@ TEMPLATE """
 
 # Prompt
 SYSTEM """
-You are given text as input from an llm. Change text into bullet form and organize the text to your best capabilities"""
+Organise text into bullet form with questions in bullets. Do not include any special characters!!!Organize the text to your best capabilities"""

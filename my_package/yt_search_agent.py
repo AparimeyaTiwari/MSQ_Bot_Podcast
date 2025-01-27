@@ -8,6 +8,7 @@ from my_package.resume_parse import *
 from my_package.text_ner import ner_generator
 from my_package.questions_gen import question_generator
 from my_package.theme_generation import theme
+from pathlib import Path
 
 
 '''combined_data = [] #used to store all data which is to be feed into our final model
@@ -89,16 +90,16 @@ def formating(text):
     response : ChatResponse = chat(model='formating_model',messages=[
         {
             'role': 'user',
-            'content':f'{input}',
+            'content':f'{text}',
         },
     ])
     return response.message.content
 
-def convert(input,guest):
+def convert(input,name):
     class PDF(FPDF):
         def header(self):
             self.set_font('Helvetica','BI',30)
-            self.cell(0,10,f'{guest.upper()} QUESTIONS',ln=1,align = 'C')
+            self.cell(0,10,f'{name.upper()} QUESTIONS',ln=1,align = 'C')
             self.ln(10)
 
         def footer(self):
@@ -116,5 +117,4 @@ def convert(input,guest):
     pdf.add_page()
     pdf.set_auto_page_break(auto = True, margin=10)
     pdf.add_chapter(input)
-    pdf.output(f'{guest}.pdf')
-    print("PDF READY TO VIEW!!")
+    pdf.output(os.path.join(os.path.expanduser('~'),'Downloads',f'{name}.pdf'))
