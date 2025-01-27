@@ -86,14 +86,7 @@ response : ChatResponse = chat(model="podcast_model",messages = [
 ])
 
 '''
-def formating(text):
-    response : ChatResponse = chat(model='formating_model',messages=[
-        {
-            'role': 'user',
-            'content':f'{text}',
-        },
-    ])
-    return response.message.content
+
 
 def convert(input,name):
     class PDF(FPDF):
@@ -117,4 +110,4 @@ def convert(input,name):
     pdf.add_page()
     pdf.set_auto_page_break(auto = True, margin=10)
     pdf.add_chapter(input)
-    pdf.output(os.path.join(os.path.expanduser('~'),'Downloads',f'{name}.pdf'))
+    pdf.output(os.path.join(os.path.expanduser('~'),'Downloads','MSQ_BOT_PODCAST','flask_code','static',f'{name}.pdf'))

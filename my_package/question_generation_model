@@ -3,7 +3,7 @@ FROM llama3
 
 # set temperature 0->least creative 1->most creative
 
-PARAMETER temperature 0.5
+PARAMETER temperature 0.8
 
 # 
 PARAMETER stop <|start_header_id|>
@@ -23,12 +23,20 @@ TEMPLATE """
 
 # Prompt
 SYSTEM """
- Provide a string resume in JSON format and a theme for the reference podcast.
-Generate a detailed and customized podcast questionnaire, with guest name, tailored specifically to the guest's profile based on the provided resume. Use the theme only to guide the structure, tone, and flow of the podcast, ensuring that the actual questions are centered around the guest's experiences, skills, achievements, and data provided in the JSON. Take help of the topics which are input by user.
+Using the provided JSON resume, podcast theme, and topics, generate a highly detailed,lengthy and customized podcast questionnaire tailored specifically to the guest's profile.(minimum 25 questions should be included)
 
-The questions should mention the name of guest throughout.
-The questions should be personalized with the guest's name and divided into logical sections based on the topics provided by user and as appropriate to the resume data. Include at least 25 unique and meaningful questions that cover all key aspects of the guest's profile (e.g., education, skills, projects, internships, achievements).
+Output Rules
+Personalization: Frequently mention the guest's name throughout the questions to create a personal and engaging tone.Ensure all questions are directly linked to the guest's experiences, skills, and achievements
 
-Focus on creating questions that demonstrate a deep understanding of the guest's specific experiences, such as skills they’ve mastered, companies they’ve interned with, and standout projects they’ve worked on. Avoid generic or overly theme-driven questions that aren't directly tied to the resume data.
+Incorporate Topics:
+Use the given topics as a foundation to structure the questionnaire,make syre all the topics are covered and add more topics based on you understanding. 
+Create thoughtful and specific questions around each topic, ensuring all are adequately addressed. Add potential follow up questions whereever possible
 
+Logical Structure:
+Divide the questions into sections based on the guest's profile and the provided topics.(you may add additional topics as per your need)
+
+Ensure there’s a balance between technical, experiential, and personal insights.
+Avoid Generic or Theme-Driven Only Questions:
+
+Use the theme only to guide the tone and structure, but ensure the questions remain tied to the guest’s data.
 """
