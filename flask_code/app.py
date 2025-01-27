@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect,request
+from flask import Flask, render_template, redirect,request, send_file
 from werkzeug.utils import secure_filename
 import os
 import sys
@@ -39,11 +39,21 @@ def podcast_question():
         ner_generator(f'json/{final_name}',my_array)
         theme(youtube,my_array)
         question = question_generator(my_array)
-        formatted_ques = formating(question)
         convert(question,guest)
-        return 'Data submitted sucessfully!!!Please stand by while we generate the podcast questions' 
+        output = os.path.join(os.path.expanduser('~'),'Downloads',f'{guest}.pdf')
+        if(os.path.exists(output) == False):
+            return "Error questiosn not generated"
+        send_file(
+            output,
+            as_attachment = True,
+            download_name='GUEST_QUESTIONS.pdf'
+        )
+        return redirect('/final_page',guest)
     return redirect('/')
 
+@app.route('/final_page')
+def output(guest):
+   return render_template('page2.html')
 
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
