@@ -30,3 +30,20 @@ input,textarea{
     align-items: center;
 }
 
+.loading{
+    height: 100px;
+    width:100px;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    background-color: white;
+    background-color:#00FFAB;
+    animation-name: loader;
+    animation-duration: infinite;
+}
+
+@keyframes loader {
+    from{background-color:#00FFAB;}
+    to{background-color:blueviolet;}
+}

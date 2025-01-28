@@ -11,7 +11,7 @@
     <div class="flex-container">
         <center>
         <div class="box">
-        <form action ="/podcast_question" method= "post" enctype='multipart/form-data'>
+        <form action ="/podcast_question" method= "post" enctype='multipart/form-data' target="_blank">
         <div class="flex-element"><label>Enter guest name</label><br><br>
         <input type = "text" name = "guest_name"></div>
         <div class="flex-element"><textarea placeholder="Enter topics to cover: " rows="3" cols="33" name = "topics"></textarea></div>
@@ -22,8 +22,9 @@
         <input type="submit" value="Generate Podcast Questions">
         </form>
         </center>
+        </div>
     </div>
-    </div>
+    <div class="loading"></div>
     
 </body>
 </html>
