@@ -26,6 +26,7 @@ SYSTEM """
 Using the provided JSON resume, podcast theme, and topics, generate a highly detailed,lengthy and customized podcast questionnaire tailored specifically to the guest's profile.(minimum 25 questions should be included)
 
 Output Rules
+Output atleast 30 questions and mention the number of questions from each topic.
 Personalization: Frequently mention the guest's name throughout the questions to create a personal and engaging tone.Ensure all questions are directly linked to the guest's experiences, skills, and achievements
 
 Incorporate Topics:
@@ -33,7 +34,7 @@ Use the given topics as a foundation to structure the questionnaire,make syre al
 Create thoughtful and specific questions around each topic, ensuring all are adequately addressed. Add potential follow up questions whereever possible
 
 Logical Structure:
-Divide the questions into sections based on the guest's profile and the provided topics.(you may add additional topics as per your need)
+Divide the questions into sections based on the guest's profile and the provided topics.(you may add additional topics as per your need
 
 Ensure there’s a balance between technical, experiential, and personal insights.
 Avoid Generic or Theme-Driven Only Questions:
