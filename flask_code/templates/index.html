@@ -6,25 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type=text/css href="{{url_for('static',filename='style.css')}}">
     <title>MSQ_BOT</title>
+    <script type="text/javascript">
+        
+    </script>
 </head>
 <body>
-    <div class="flex-container">
+    <div class="flex-container" id="fc">
         <center>
         <div class="box">
-        <form action ="/podcast_question" method= "post" enctype='multipart/form-data' target="_blank">
-        <div class="flex-element"><label>Enter guest name</label><br><br>
-        <input type = "text" name = "guest_name"></div>
-        <div class="flex-element"><textarea placeholder="Enter topics to cover: " rows="3" cols="33" name = "topics"></textarea></div>
-        <div class="flex-element"><label>Attach guest resume</label><br><br>
-        <input type = "file" name = "file"></div>
-        <div class="flex-element"><label>Attach reference links</label><br><br>
-        <input type = "text" name = "yt"></div><br><br>
-        <input type="submit" value="Generate Podcast Questions">
-        </form>
+            <form action ="/podcast_question" method= "post" enctype='multipart/form-data' id='myform'>
+                <div class="flex-element">
+                    <label>Enter guest name</label><br><br>
+                    <input type = "text" name = "guest_name"></div>
+                    <div class="flex-element"><textarea placeholder="Enter topics to cover: " rows="3" cols="33" name = "topics"></textarea></div>
+                    <div class="flex-element"><label>Attach guest resume</label><br><br>
+                        <input type = "file" name = "file"></div>
+                    <div class="flex-element"><label>Attach reference links</label><br><br>
+                        <input type = "text" name = "yt"></div><br><br>
+                        <input type="submit" value="Generate Podcast Questions">
+            </form>
         </center>
         </div>
     </div>
-    <div class="loading"></div>
+    <div id="loader">
+        <h2>Extracting data from resume...</h2>
+        <h2>Researching...</h2>
+        <h2>Extracting theme related data...</h2>
+        <h2>Generating questions...</h2>
+    </div>
+    <script>
+        function myfun(){
+            document.getElementById('fc').style.display = 'none';
+            document.getElementById('loader').style.display = 'flex';
+            document.body.style.opacity = 0.2;
+        }
+
+        let element = document.getElementById('myform');
+        element.addEventListener('submit',myfun);
+    </script>
     
 </body>
 </html>

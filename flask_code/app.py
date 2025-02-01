@@ -50,12 +50,8 @@ def podcast_question():
             as_attachment = True,
             download_name=f'{guest}.pdf'
         )
-        return redirect('/final_page')
+        return render_template('page2.html',name=name)
     return redirect('/')
-
-@app.route('/final_page')
-def output():
-   return render_template('page2.html',name=name)
 
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
