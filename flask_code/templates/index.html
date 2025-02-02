@@ -29,16 +29,16 @@
         </div>
     </div>
     <div id="loader">
-        <h2>Extracting data from resume...</h2>
-        <h2>Researching...</h2>
-        <h2>Extracting theme related data...</h2>
-        <h2>Generating questions...</h2>
+        <div id='first'><h2>Extracting data from resume...</h2></div>
+        <div id='second'><h2>Researching...</h2></div>
+        <div id='third'><h2>Extracting theme related data...</h2></div>
+        <div id='fourth'><h2>Generating questions...</h2></div>
     </div>
     <script>
         function myfun(){
             document.getElementById('fc').style.display = 'none';
             document.getElementById('loader').style.display = 'flex';
-            document.body.style.opacity = 0.2;
+            document.body.style.backgroundImage = 'none';
         }
 
         let element = document.getElementById('myform');
