@@ -1,8 +1,8 @@
 import streamlit as st # type: ignore
-st.title("WELCOME TO MSQ PODCAST BOT!!!")
-with st.form('bot form',border = True):
-    name = st.text_input("Enter guest name")
-    theme = st.text_area("Theme of the podcast")
-    resume = st.file_uploader("Upload the resume of guest")
-    youtube = st.text_area("Enter reference youtube video url")
-    submitted = st.form_submit_button("Generate Podcast questions")
+st.title("Welcome to the AI podcast questionnaire maker")
+with st.form(key='myf',clear_on_submit=False,enter_to_submit=False,border=True):
+    st.text_input(label='Guest Name',placeholder="Enter guest name")
+    st.text_area(label="Theme Information",placeholder="Enter topics that you wanna discuss in your podcast")
+    st.file_uploader(label='Guest resume')
+    st.text_input(label='Youtube Link',placeholder="Enter reference podcast youtube references")
+    st.form_submit_button(label="Generate Podcast Questions",type="primary")
