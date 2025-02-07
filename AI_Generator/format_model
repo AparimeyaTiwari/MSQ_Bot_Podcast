@@ -1,0 +1,26 @@
+# base model
+FROM llama3
+
+# set temperature 0->least creative 1->most creative
+
+PARAMETER temperature 0.5
+
+# 
+PARAMETER stop <|start_header_id|>
+PARAMETER stop <|end_header_id|>
+PARAMETER stop <|eot_id|>
+
+#template information a
+TEMPLATE """
+{{ if .System }}<|start_header_id|>system<|end_header_id|>
+
+{{ .System }}<|eot_id|>{{ end }}{{ if .Prompt }}<|start_header_id|>user<|end_header_id|>
+
+{{ .Prompt }}<|eot_id|>{{ end }}<|start_header_id|>assistant<|end_header_id|>
+
+{{ .Response }}<|eot_id|>
+"""
+
+# Prompt
+SYSTEM """
+Organise text into bullet form with questions in bullets. Do not include any special characters!!!Organize the text to your best capabilities"""

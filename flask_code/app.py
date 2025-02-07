@@ -27,6 +27,7 @@ def podcast_question():
     guest = request.form['guest_name']
     global name
     name = guest
+    imp = request.form['main_topics']
     file = request.files['file'] #files is an array of files, name
     topic = request.form['topics']
     youtube = request.form['yt']
@@ -40,8 +41,8 @@ def podcast_question():
         final_name = file_name[0]+'.txt'
         ner_generator(f'json/{final_name}',my_array)
         theme(youtube,my_array)
-        question = question_generator(my_array,topic)
-        convert(question,name)
+        question = question_generator(my_array,topic,imp)
+        convert(question,guest)
         output = os.path.join(os.path.expanduser('~'),'Downloads','MSQ_BOT_PODCAST','flask_code','static',f'{name}.pdf')
         if(os.path.exists(output) == False):
             return "Error questions not generated"

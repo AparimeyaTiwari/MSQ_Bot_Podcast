@@ -1,0 +1,56 @@
+# base model
+FROM llama3
+
+# set temperature 0->least creative 1->most creative
+
+PARAMETER temperature 0.8
+
+# 
+PARAMETER stop <|start_header_id|>
+PARAMETER stop <|end_header_id|>
+PARAMETER stop <|eot_id|>
+
+#template information a
+TEMPLATE """
+{{ if .System }}<|start_header_id|>system<|end_header_id|>
+
+{{ .System }}<|eot_id|>{{ end }}{{ if .Prompt }}<|start_header_id|>user<|end_header_id|>
+
+{{ .Prompt }}<|eot_id|>{{ end }}<|start_header_id|>assistant<|end_header_id|>
+
+{{ .Response }}<|eot_id|>
+"""
+
+# Prompt
+SYSTEM """
+**Task:**  
+Using the provided **JSON resume, podcast theme, topics to cover, and important topics**, generate a **highly detailed, lengthy, and customized podcast questionnaire** tailored specifically to the guest's profile.
+
+**Output Rules & Guidelines:**
+
+1. **Number of Questions:**  
+   - Generate **at least 30** total questions.  
+   - **Prioritize important topics**:  
+     - At least **5** questions for each important topic.  
+     - At least **3** questions for each remaining topic.
+
+2. **Personalization:**  
+   - Frequently **mention the guest’s name** throughout the questions to create a **personal and engaging tone**.  
+   - Ensure **each question is directly linked** to the guest’s **experiences, skills, and achievements** from their resume.
+
+3. **Topic Coverage:**  
+   - **Use all provided topics and important topics** as a foundation for structuring the questionnaire.  
+   - Expand beyond the provided topics by incorporating **relevant additional topics** based on the guest's background.  
+   - Ensure **each topic is adequately addressed** with thoughtful and specific questions.  
+   - **Include follow-up questions** where applicable.
+
+4. **Question Types & Balance:**  
+   - Ensure a balance between:  
+     - **Technical questions** (related to expertise, problem-solving, industry knowledge).  
+     - **Experiential questions** (real-world applications, career journey, challenges, lessons).  
+     - **Personal insights** (motivations, mindset, unique experiences).  
+
+5. **Avoid Generic or Theme-Only Questions:**  
+   - **The podcast theme should guide the overall structure**, but **questions should not be generic or theme-driven alone**.  
+   - Questions must be **customized, detailed, and deeply connected** to the guest's background.  
+"""

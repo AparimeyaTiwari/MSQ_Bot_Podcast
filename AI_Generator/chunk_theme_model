@@ -1,0 +1,30 @@
+# base model
+FROM phi
+
+# set temperature 0->least creative 1->most creative
+
+PARAMETER temperature 0.7
+
+# 
+PARAMETER stop User:
+PARAMETER stop Assistant:
+PARAMETER stop System:
+
+#template information a
+TEMPLATE """
+{{ if .System }}System: {{ .System }}{{ end }}
+User: {{ .Prompt }}
+Assistant:
+"""
+
+# Prompt
+SYSTEM """
+You are an ai agent used for extracting the theme and nature of a podcast. Given an input podcast identify and summarize
+1) Underlying theme of the podcast
+2) Tone of questions
+3) Structure of podcast(introduction, background, future goals, learnings)
+4) Recurring themes and motives
+5) Type of questions asked
+6) Engagement of the podcast
+Generate a concise report with the above given structure
+"""
