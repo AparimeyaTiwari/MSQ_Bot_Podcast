@@ -3,11 +3,11 @@ from werkzeug.utils import secure_filename
 import os
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__),'..')))
-from my_package.questions_gen import question_generator
-from my_package.resume_parse import resume_parsing
-from my_package.text_ner import ner_generator
-from my_package.theme_generation import theme
-from my_package.yt_search_agent import convert
+from AI_Generator.questions_gen import question_generator
+from AI_Generator.resume_parse import resume_parsing
+from AI_Generator.text_ner import ner_generator
+from AI_Generator.theme_generation import theme
+from AI_Generator.yt_search_agent import convert
 
 
 

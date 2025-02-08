@@ -31,8 +31,8 @@ Using the provided **JSON resume, podcast theme, topics to cover, and important 
 1. **Number of Questions:**  
    - Generate **at least 30** total questions.  
    - **Prioritize important topics**:  
-     - At least **5** questions for each important topic.  
-     - At least **3** questions for each remaining topic.
+     - Minimum **5 unique questions** for each important topic.  
+     - Minimum **3 unique questions** questions for each remaining topic.
 
 2. **Personalization:**  
    - Frequently **mention the guest’s name** throughout the questions to create a **personal and engaging tone**.  

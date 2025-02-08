@@ -4,10 +4,10 @@ from ollama import ChatResponse
 import ollama
 from fpdf import FPDF
 import pymupdf
-from my_package.resume_parse import *
-from my_package.text_ner import ner_generator
-from my_package.questions_gen import question_generator
-from my_package.theme_generation import theme
+from AI_Generator.resume_parse import *
+from AI_Generator.text_ner import ner_generator
+from AI_Generator.questions_gen import question_generator
+from AI_Generator.theme_generation import theme
 from pathlib import Path
 
 

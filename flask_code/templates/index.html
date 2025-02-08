@@ -34,13 +34,40 @@
             </form>
     </div>
     <div id="loader">
-        <h1>Generating questions</h1>
+        <h1 id='message'></h1>
         <span></span>
         <span></span>
         <span></span>
         <span></span>
     </div>
     <script>
+        const msg = [
+        'Analysing Guest Resume',
+        'Searching YouTube',
+        'Collecting Data',
+        'Generating Questions'
+        ];
+
+        let i = 0;
+        let time = 0;
+        function updateMsg() {
+            const ele = document.getElementById('message');
+            if (ele) {
+                if(time == 15000){
+                    ele.innerHTML = `${msg[0]}`;
+                }
+                else{
+                    ele.innerHTML = `${msg[i]}`;
+                }
+                time += 5000;
+                if(time%50000 == 0){
+                    i = (i + 1) % msg.length;
+                }
+            }
+        }
+
+        setInterval(updateMsg, 5000);
+
         function myfun(){
             document.getElementById('fc').style.opacity = 0.2;
             document.getElementById('loader').style.display = 'flex';
@@ -48,6 +75,7 @@
         
         let element = document.getElementById('myform');
         element.addEventListener("submit",myfun);
+
     </script>
     
 </body>

@@ -75,32 +75,32 @@ form{
 
 
 #loader span:nth-child(2){
- height: 200px;
- width: 200px;
+ height: 330px;
+ width: 330px;
  border-left: 6px solid white;
  border-radius: 50%;
  animation: rot1 500ms infinite;
 }
 
 #loader span:nth-child(3){
- height:230px;
- width:230px;
+ height:370px;
+ width: 370px;
  border-left: 6px solid blueviolet;
  border-radius: 50%;
  animation: rot1 600ms infinite;
 }
 
 #loader span:nth-child(4){
- height:270px;
- width:270px;
+ height:410px;
+ width:410px;
  border-left: 6px solid #00FFFF;
  border-radius: 50%;
  animation: rot1 700ms infinite;
 }
 
 #loader span:nth-child(5){
- height: 310px;
- width:310px;
+ height: 450px;
+ width:450px;
  border-left: 6px solid #000000;
  border-radius: 50%;
  animation: rot1 800ms infinite;
@@ -125,10 +125,11 @@ form{
 #loader h1{
    text-align: center;
    color:white;
-   font-size:20px;
- opacity:0;
- animation: fade 7s infinite ease-in-out;
+   font-size:25px;
+   opacity:0;
+   animation: fade 5s infinite ease-in-out;
 }
+
 
 @keyframes fade{
  25%{
