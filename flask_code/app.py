@@ -42,7 +42,7 @@ def podcast_question():
         ner_generator(f'json/{final_name}',my_array)
         theme(youtube,my_array)
         question = question_generator(my_array,topic,imp)
-        convert("\n".join(question),name = guest)
+        convert("".join(question), guest)
         output = os.path.join(os.path.expanduser('~'),'Downloads','MSQ_BOT_PODCAST','flask_code','static',f'{name}.pdf')
         if(os.path.exists(output) == False):
             return "Error questions not generated"

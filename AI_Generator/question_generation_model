@@ -29,10 +29,10 @@ Using the provided **JSON resume, podcast theme, topics to cover, and important 
 **Output Rules & Guidelines:**
 
 1. **Number of Questions:**  
-   - Generate **at least 30** total questions.  
+   - Generate **greater than 30 questions** total questions.  
    - **Prioritize important topics**:  
      - Minimum **5 unique questions** for each important topic.  
-     - Minimum **3 unique questions** questions for each remaining topic.
+     - Minimum **3 unique questions**  for each remaining topic.
 
 2. **Personalization:**  
    - Frequently **mention the guest’s name** throughout the questions to create a **personal and engaging tone**.  

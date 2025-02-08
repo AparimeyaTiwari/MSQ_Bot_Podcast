@@ -53,7 +53,7 @@
         function updateMsg() {
             const ele = document.getElementById('message');
             if (ele) {
-                if(time == 15000){
+                if(time >= 15000){
                     ele.innerHTML = `${msg[0]}`;
                 }
                 else{
