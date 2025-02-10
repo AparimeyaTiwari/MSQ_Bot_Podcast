@@ -41,34 +41,34 @@
         <span></span>
     </div>
     <script>
-        const msg = [
-        'Generating Questions',
-        'Analysing Guest Resume',
-        'Searching YouTube',
-        'Collecting Data',
-        ];
- 
-        let i = 1;
-        let time = 0;
-        function updateMsg() {
-            const ele = document.getElementById('message');
-            if (ele) {
-                if(time >= 150000){
-                    ele.innerHTML = `${msg[0]}`;
-                }
-                else{
-                    ele.innerHTML = `${msg[i]}`;
-                }
-                time += 5000;
-                if(time%50000 == 0){
-                    i = (i + 1) % msg.length;
-                }
-            }
-        }
-        setInterval(updateMsg, 5000);
         function myfun(){
             document.getElementById('fc').style.opacity = 0.2;
             document.getElementById('loader').style.display = 'flex';
+            const msg = [
+                'Generating Questions',
+                'Analysing Guest Resume',
+                'Searching YouTube',
+                'Collecting Data',
+            ];
+ 
+            let i = 1;
+            let time = 0;
+            function updateMsg() {
+                const ele = document.getElementById('message');
+                if (ele) {
+                    if(time >= 150000){
+                        ele.innerHTML = `${msg[0]}`;
+                    }
+                    else{
+                        ele.innerHTML = `${msg[i]}`;
+                    }
+                    time += 5000;
+                    if(time%50000 == 0){
+                        i = (i + 1) % msg.length;
+                    }
+                }
+            }
+            setInterval(updateMsg, 5000);
         }
         
         let element = document.getElementById('myform');
