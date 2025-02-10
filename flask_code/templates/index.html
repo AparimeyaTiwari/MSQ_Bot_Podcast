@@ -42,19 +42,19 @@
     </div>
     <script>
         const msg = [
+        'Generating Questions',
         'Analysing Guest Resume',
         'Searching YouTube',
         'Collecting Data',
-        'Generating Questions'
         ];
-
-        let i = 0;
+ 
+        let i = 1;
         let time = 0;
         function updateMsg() {
             const ele = document.getElementById('message');
             if (ele) {
-                if(time >= 15000){
-                    ele.innerHTML = `${msg[3]}`;
+                if(time >= 150000){
+                    ele.innerHTML = `${msg[0]}`;
                 }
                 else{
                     ele.innerHTML = `${msg[i]}`;
@@ -65,9 +65,7 @@
                 }
             }
         }
-
         setInterval(updateMsg, 5000);
-
         function myfun(){
             document.getElementById('fc').style.opacity = 0.2;
             document.getElementById('loader').style.display = 'flex';

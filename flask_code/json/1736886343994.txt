@@ -1,0 +1,193 @@
+Kabeer Ahmed Merchant
+Pune, Maharashtra, India
+# merchantkabeer68@gmail.com
+ï linkedin.com/in/kabeer-ahmed-merchant
+§ github.com/Kabeer2004
+Education
+Savitribai Phule Pune University
+Nov. 2022 – Aug. 2026 (Expected)
+Bachelor of Engineering in Artificial Intelligence and Data Science, Second Year GPA - 9.05
+Pune, Maharashtra
+Competitive Exams
+June 2020 – August 2022
+JEE Mains - 91%ile (99%ile in Physics), MHCET - 96%ile (99%ile in Physics)
+Pune, Maharashtra
+City International School
+Sept 2020 – Aug. 2022
+CBSE, 12th Standard - 80.2%
+Pune, Maharashtra
+Hutchings High School and Junior College
+June 2009 – May. 2020
+ICSE, 10th Standard - 96%
+Pune, Maharashtra
+Relevant Coursework
+• Data Structures and
+Algorithms
+• Software Engineering
+• MIS
+• DBMS
+• Artificial Intelligence
+• Internet of Things
+• Operating Systems
+• Computer Graphics
+• Computer Networks
+• Web Technologies
+• Human Computer
+Interaction
+• Discrete Math
+• Statistics
+• Engineering Math
+Experience
+Existence
+Feb 2022 – Present
+Co-Founder
+Pune, Maharashtra
+• Co-founded a startup that is focused on building innovative products and providing optimum customer satisfaction
+through tailored development services.
+• Currently developing Sentient - a personal AI with agents and memory.
+• Manage a team of 7 people that includes developers, designers and researchers.
+• Developing technical skills such as the application of full stack web and app development, AI, etc. for product
+development along with nontechnical skills like team management, leadership skills, administration, project management,
+client acquisition, social media marketing, hypothesis testing, market research and more.
+Projects
+Sentient | Python, NextJS, TailwindCSS, ElectronJS, Neo4J, FastAPI, Langchain, Flower
+Oct 2024 - Present
+• Sentient is your personal and private AI with agents and memory. It is a fully local AI companion that features extensive
+integrations with your favorite tools and memory that allows it to learn more about you over time.
+• Sentient is a desktop app built with ElectronJS and Python and features a fully custom orchestrator-based pipeline for
+agents and memory that we developed in-house. It also has additional features like internet search that allows Sentient to
+query the web for any info it needs, with plans for many more features in the future.
+• Sentient uses a personality test based on the Myer-Briggs Type Indicator to understand the personality of the user. This
+is used along with data pulled from a user’s social media profiles to create a knowledge graph about the user. This graph
+is maintained by Sentient and used to personalize responses.
+• v1.3 of the app includes full integration with GSuite (Gmail, GDrive, GDocs, GSheets, GSlides, GCalendar), a custom
+memory pipeline to create and maintain a knowledge graph about the user along with LinkedIn, Reddit and X
+integrations to pull personal data about the user for profile creation.
+• Sentient is available for download today - check out the website for a live web demo, download info, release pipeline and
+more. sentient.app
+Project Vaayu | Python, Jupyter Notebook, Image Segmentation, Machine Learning, PyTorch
+Oct 2024 - Present
+• Developed a UNet++ based solution for Image Segmentation of Drone Orthophotos for the Ministry of Panchayati Raj.
+• Worked with GIS data in software like QGIS. Designed and implemented a custom pipeline to generate training data for
+image segmentation models from hi-resolution drone imagery and vector data.
+• Successfully implemented and open-sourced the expected solution. Trained ML models for segmentation of buildings,
+roads and water bodies from drone orthophotos.
+• Project Vaayu is open source and can be viewed on GitHub. GitHub Repository
+Bloomify | Python, NextJS, TailwindCSS, MongoDB, Docker, FastAPI, Vercel, Mistral, QLoRA
+Feb 2024 - Present
+• Developed a chatbot-based solution for assessment creation based on Bloom’s Taxononmy for modern educators.
+• Features include - Classification of questions into their cognitive levels (Bloom’s Taxonomy Levels), Transformation of
+questions from one Bloom’s Level to another and Generation of full assessments using inputs like syllabus, marking
+scheme, average Bloom’s level and more.
+• Conducted research by analyzing more than 21,000 questions from engineering question papers and developed a novel
+process for generating assessments that test a wider variety of cognitive skills than current assessment techniques. The
+research work led to a patent being published, and a research paper is also in the process of being published.
+• This project is currently deployed live and is being used by some engineering colleges in Pune for assessment creation.
+Check it out here. bloomify.app
+MindSync | NextJS, TailwindCSS, MongoDB, Gemini API, OCR, Speech to Text, Vercel, GitHub
+April 2024 - Oct 2024
+• Currently creating a web-based platform for creating mindmaps quickly and conveniently.
+• Users can add any information - text (users can type or add text from a Word doc, PDF or PlainText file), images,
+audio, video.
+• Multimodal input options allow users to add textbooks, handwritten notes, video or audio lectures and convert
+everything to a mindmap in a single click.
+• All this can be accessed and used via an easy-to-use and modern web-application that is powered by NextJS,
+TailwindCSS and MongoDB.
+• The web platform allows users to save maps online, edit them completely online using code or even by simply sending
+messages with the necessary changes and/or extra multi-modal information that they want to add to the mindmap.
+• This project is currently in the Alpha phase and can be accessed at: mindsync.app
+FinAdvise | Python, NextJS, TailwindCSS, MongoDB, FastAPI, Vercel, Mistral, Selenium, LangChain July 2024 - Oct 2024
+• Developing an AI-based Financial Advisory platform for young professionals.
+• Features include - AI-enabled personalized financial advice, news aggregation for financial updates with personalized
+watchlists, expense tracking with trend analysis and integration of Chartered Accountants and Investment Consultants
+into the platform for the creation of an all-in-one financial ecosystem.
+• Conducted research on various financial concepts such as ETFs, mutual funds, investment portfolio creation, risk
+appetites and so on.
+• This project is currently under development. View a product demo and join the waitlist here: finadvise.app
+Team Squadrone | Python, Raspberry Pi, Mission Control, OpenCV, Radio Communication
+April 2024 - Present
+• Worked on the autonomous flight system for an Unmanned Aerial System.
+• We participated in prestigious competitions like the Society of Automotive Engineers (SAE) India’s Aerothon 2024.
+Gemini2Blend | Python, Generative AI, Gemini API, Blender, 3D
+March 2024 - March 2024
+• Gemini2Blend is a simple Blender addon that enables users to interact with Google’s Gemini Large Language Model
+(LLM) directly within Blender.
+• With this addon, users can quickly ask questions, clarify doubts, or seek assistance without the need to switch between
+different applications, streamlining their workflow and enhancing productivity.
+Recognizing Handwritten Digits using Deep Learning | Python, Keras, Deep Learning, Machine Lerning Sept 23 - Sept 23
+• Implemented a Keras Deep Learning Model to label handwritten digits from the MNIST dataset.
+• This notebook was my submission to the MNIST competition on Kaggle and I got a score of 0.99053 for it. View the
+original notebook here: Kaggle Notebook
+Other Projects | Various Skills/Tools
+Completed
+• Created a 3D Tic-Tac-Toe Game in Unreal Engine to explore game development. Also created some basic FPS Games
+and worked on in-game AI.
+• Created a full-stack bus-pass booking and ticket management system. Used Python, Flask, SQLite.
+• Created a comprehensive event management system developed to streamline event organization and attendance tracking.
+This project was initially created to manage events at a college, providing features for both attendance tracking and food
+coupon management using QR-code based electronic passes.
+• Worked on JalMitra, which was an idea for a mobile app that my team and I worked on for the Smart India Hackathon.
+The app was meant to be a digital solution for water-related problem reporting and efficient management of issues along
+with expenditure tracking and resource management. Included AI models for issue prioritization that could potentially
+make administrative work easier and more efficient.
+• Created a simple, animated toll-gate simulation using pure C++ and OpenGL.
+• Manage my own trading portfolio that I grew by 110% over a period of 2 years.
+• Created a Python Script that automatically downloaded (from reddit), formatted (fixing dimensions for posting to
+Instagram) and re-uploaded images (to Instagram) as a project to research automatic content creation. Used Python.
+• Used wget in Python to create a script which could pull the stock data for current date, specified date or date range. The
+program included logic which could modify the downloading URL depending on the date/dates entered. Used Python.
+Technical Skills
+Languages: Python, NodeJS, TailwindCSS, C++, MongoDB, SQL, Arduino, Java
+Developer Tools: VS Code, Jupyter Notebooks/Google Colab, Project IDX, Unreal Engine, VMWare, Oracle Virtualbox,
+QGIS
+Technologies/Frameworks: NextJS, ElectronJS, Flask, React, GitHub, Docker, Kubernetes, Linux (Ubuntu, Kali Linux),
+cybersecurity tools (Metasploit framework, Wireshark, nmap), TensorFlow, Langchain, FastAPI, Vercel, ngrok, Arduino,
+Raspberry Pi, System Design
+Project Management: Microsoft Office, Google Docs, Jira, Trello, Slack, Asana, Discord
+Others: Blender, After Effects, Premiere Pro, Photoshop, Waveform Free
+Leadership / Extracurricular
+Hirameki Japanese Language Classes
+January 2023 – Present
+Studying Japanese
+Pune Vidyarthi Griha’s College of Engineering and Technology
+• Currently studying N3 Level Japanese.
+• Passed the JLPT N5 with 140/180 marks.
+• Passed the JLPT N4 with 104/180 marks.
+• Can read, write and converse in Japanese.
+Hackathons
+November 2022 – Present
+Team Leader/Team Member
+Pune Vidyarthi Griha’s College of Engineering and Technology
+• Participated in various hackathons as an engineering student.
+• Notable Achievement - Reached the finals of Smart India Hackathon 2024 with Project Vaayu, held @ Coimbatore in
+December 2024. Placed 2nd All-India.
+Entrepreneurship Development Cell
+April 2024 – Present
+Content Development Head
+Pune Vidyarthi Griha’s College of Engineering and Technology
+• Hosted and ran a series called Udaan: The Entrepreneurial Journey on Instagram.
+• Lead the content development team that consists of video editors, script writers and more.
+• Cover topics like entrepreneurship, startups, case studies, finance and more on the show.
+Volunteering Experience
+November 2022 – Present
+Team Leader/Team Member
+Independent
+• Volunteer with organizations like the Pune Blind Men’s Association.
+• Assist the visually impaired by providing services as a scribe and also help them out wherever possible. (for example,
+filling forms, creating resumes, etc)
+Codestreak
+September 2020 – Present
+Content Creator
+Independent
+• Run a content outlet under Existence where we post tech content for thousands of people from all around the world. We
+have viewers from countries around the world with most of our viewers on YouTube in Jan 2025 coming from India, the
+US, UK, Turkey and Germany.
+• We create both informative and entertaining videos. Videos are posted to Instagram and YouTube.
+• youtube.com/Codestreak
+YouTube Channel
+September 2020 – Present
+Content Creator
+Independent
+• Run a personal YouTube channel where I discuss various topics like technology, science, programming and more.
+• Developed my public speaking skills.
+• youtube.com/Kabeer2004
