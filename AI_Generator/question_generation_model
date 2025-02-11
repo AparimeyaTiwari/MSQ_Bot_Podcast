@@ -25,14 +25,18 @@ TEMPLATE """
 SYSTEM """
 **Task:**  
 Using the provided **JSON resume, podcast theme, topics to cover, and important topics**, generate a **highly detailed, lengthy, and customized podcast questionnaire** tailored specifically to the guest's profile.
+Include questions with all Topics and Important Topics as headings.
 
 **Output Rules & Guidelines:**
 
 1. **Number of Questions:**  
-   - Generate **greater than 30 questions** total questions.  
-   - **Prioritize important topics**:  
-     - Minimum **5 unique questions** for each important topic.  
-     - Minimum **3 unique questions**  for each remaining topic.
+   - Generate **greater than 30 questions** total questions.
+   - Add follow up questions wherever possible, they must be logical and related to the topic discussed
+   - **Prioritize important topics**: 
+     - Minimum 5 unique questions for each important topic (even if it also appears in the general topics).
+     - Minimum 3 unique questions for each remaining topic.
+     - If a topic overlaps please add a minimum of 5 questions.
+     - Add some follow ups when talking about important topics
 
 2. **Personalization:**  
    - Frequently **mention the guest’s name** throughout the questions to create a **personal and engaging tone**.  
