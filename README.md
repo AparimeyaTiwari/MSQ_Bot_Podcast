@@ -22,3 +22,9 @@ To launch the webpage, simply run the command
 python3 app.py
 
 In the virutal environment
+
+
+->Project demo is available on youtube and linkedin:
+https://www.linkedin.com/posts/aparimeya-tiwari-76a252252_ai-podcasttech-flask-activity-7295121244184571905-UpkG?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD5UHsIB-PVwauGMLRdlUCzYReZ7xQuEl-g
+
+https://youtu.be/gjWOJteTW6M?si=Lr0YIPdn8RaGanYz
