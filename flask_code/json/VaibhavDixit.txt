@@ -1,0 +1,68 @@
+Vaibhav Dixit
+vkdixit@mit.edu, 6172014659
+ï
+§
+
+Summary
+Developer with a strong research affinity. At JuliaHub, I built 0-to-1 healthcare-focused deep tech products. I have 5+ years of experience
+developing open-source libraries widely used by researchers at MIT, Stanford, Princeton, and beyond. My expertise spans AI for scientific
+applications, non-linear optimization, fine-tuning LLMs and agentic applications. I am looking for Research Engineer or ML/AI Engineer roles.
+Education
+Massachusetts Institute of Technology
+September 2023 - May 2025
+Computational Science and Engineering, GPA 4.8
+Research Master’s
+Coursework: Optimization, Deep Learning (NLP), Robotics, High dimensional Statistics, Random matrix theory, GPU Programming
+Indian Institute of Technology (BHU)
+July 2016 - May 2021
+Mathematics and Computing
+B.Tech and M.Tech
+Experience
+CSAIL, MIT
+Research Assistant
+September 2023 - Present
+• Developed optimization methods for constrained fine-tuning of LLMs, achieving a 5% improvement in alignment and 11% reduction in
+safety violations by integrating hybrid preference optimization with auxiliary objectives and augmented Lagrangian techniques.
+• Developed novel batching strategies for dynamical model data and sharpness based learning rate scheduling, applied to neural network
+surrogate training for Izhikevich model of neurons leading to a reproducible and 30% more efficient training workflow.
+• Developed sparsity-aware augmented Lagrangian and CCSA methods for optimization problems with stochastic objective and
+deterministic constraints, which arise in the Empirical Risk Minimization (ERM) framework with physical constraints.
+• Created Disciplined Geodesically Convex Programming (DGCP), a framework for verifying geodesic convexity on the SPD Manifold and
+solving with global optimality certificate, for matrix-valued optimization problems in statistics and machine learning.
+Mitsubishi Research
+Research Intern
+June 2024 - August 2024
+• Performed comprehensive benchmarking and profiling of simulation code. Reduced allocations in the forward simulation of the HVAC
+Differential Algebraic model, leading to improvement in run-time by a factor of 30 enabling faster experimentation.
+• Established a parameter calibration workflow for multi-physics models with tooling for numerical optimization and sensitivity analysis.
+JuliaHub
+Software Engineer
+January 2021 - August 2023
+• Developed Pumas software for maximum-likelihood and bayesian estimations in Non-Linear Mixed Effects (NLME) models for PK/PD.
+Implemented specialized optimization solver, NUTS (MCMC) sampler, statistical estimators and model analysis methods.
+• Lead Developer of Lyv (clinical decision support software) and Pumas-CP (clinical pharmacology platform). Spearheaded the
+development of critical features in data handling, API design, low-latency computation, and integration into Epic and Cerner EHRs.
+• Collaborated with front-end teams to deploy React and Node.js applications. Managed the CI/CD infrastructure and deployment on
+AWS Lambda for serverless backends and configured S3 with CloudFront for secure, optimized static hosting and delivery.
+• Contributed to early development of deep learning approaches for surrogate modeling of Absorption, Distribution, Metabolization, and
+Excretion (ADME) profiles from clinical trial data using Neural ODEs and Universal Differential Equations (UDEs) architectures.
+Publications
+• Vaibhav Dixit, A. Cheng, and M. Weber, “Disciplined geodesically convex programming,” arXiv preprint arXiv:2407.05261, 2024
+• Vaibhav Dixit, Utkarsh, and Julian Samaroo et al., “Efficient gpu-accelerated global optimization for inverse problems,” in ICLR, 2024
+• Y. Ma and Vaibhav Dixit et al., “A comparison of automatic differentiation and continuous sensitivity analysis for derivatives of
+differential equation solutions,” in IEEE High Performance Extreme Computing Conference (HPEC), 2021
+• R. Dandekar and Vaibhav Dixit et al., “Bayesian neural ordinary differential equations,” in POPL-LAFI, 2021
+• C. Rackauckas, Vaibhav Dixit, A. R. Gerlach, and V. Ivaturi, “Efficient precision dosing under estimated uncertainties via koopman
+expectations of bayesian posteriors with pumas,” BioRxiv, 2021
+Projects
+• Achieved 3rd place in the AGI House-sponsored MIT Agent Hackathon 2024 for building an LLM-powered platform to automate
+inventory scheduling. The solution used a DPO-tuned LLaMA model to generate Python modeling code passed on to Gurobi, and
+provide a natural language summary of the solution, making complex scheduling outputs accessible to non-technical users. A lightweight
+deployment through AWS Lambda is currently being used by 5 SMBs such as pizzeria and florist in Cambridge area.
+• Secured 4th place in the MIT AI Conference Hackathon for developing an AI-powered photo album designed for visually impaired users.
+The platform used voice descriptions fine-tuned through RLHF to describe uploaded images. AWS S3 bucket served as database via the
+Boto3 library, and audio descriptions were generated using OpenAI and Google Text-to-Speech (TTS) APIs.
+Tools
+• Languages: Python, C++, Julia, JavaScript
+• ML Libraries: Pytorch, Jax, Scikit-learn, Scipy, Numpy, XGBoost
+• Technologies: NodeJS, MySQL, Autogen, Langchain, AWS, Azure, CUDA, NeMO, Triton
